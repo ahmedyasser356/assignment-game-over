@@ -5,13 +5,8 @@ export const gamePage = document.querySelector(".games")
 
 export function displayGames(list){
 let textHtml=``
-let l
-if(list.length>40){
-    l=40
-}else{
-    l=list.length
-}
-for(let i = 0;i<l;i++){
+ 
+for(let i = 0;i<list.length;i++){
     textHtml += `
      <div class="col-xl-3 col-lg-4 col-md-6 game-item  ">
      <div data-id="${list[i].id}" class="inner border border-2 border-bottom-0 p-3 rounded-top-2 pb-1  border-dark">
